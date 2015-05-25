@@ -10,16 +10,19 @@
 
 <body>
 
-	<textarea id="text" cols="45" rows="20">Now they wanna hear a country nigga rap.
-5 albums in, I swear a country nigga snap.
-Thought they wanted trap, thought they wanted bass,
-Thought they wanted molly, thought they wanted drank.</textarea>
+	<textarea id="text" cols="45" rows="20">
+		Now they wanna hear a country nigga rap.
+		5 albums in, I swear a country nigga snap.
+		Thought they wanted trap, thought they wanted bass,
+		Thought they wanted molly, thought they wanted drank.
 
-	<select id="voiceselection"></select> 
+		This was a reading of Big Krit Mount Olympus provided by Responsive Voice.</textarea>
 
-	<input onclick="responsiveVoice.speak($('#text').val(),$('#voiceselection').val());" type="button" value="Play" />
+		<select id="voiceselection"></select> 
 
-	<script>
+		<input onclick="responsiveVoice.speak($('#text').val(),$('#voiceselection').val());" type="button" value="Play" />
+
+		<script>
         //Populate voice selection dropdown
         var voicelist = responsiveVoice.getVoices();
 
